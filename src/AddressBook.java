@@ -1,18 +1,18 @@
 import java.util.ArrayList;
 public class AddressBook{
 
-    ArrayList<BuddyInfo> addressBook;
+    ArrayList<BuddyInfo> buddies;
 
     public AddressBook(){
-        addressBook = new ArrayList<>();
+        buddies = new ArrayList<>();
     }
 
     public void addBuddy(BuddyInfo buddy){
-        this.addressBook.add(buddy);
+        this.buddies.add(buddy);
     }
 
     public void removeBuddy(BuddyInfo buddy){
-        this.addressBook.remove(buddy);
+        this.buddies.remove(buddy);
     }
 
 
