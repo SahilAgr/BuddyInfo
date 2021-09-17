@@ -1,23 +1,26 @@
-import java.util.HashMap;
+import java.util.ArrayList;
 public class AddressBook{
 
-    private HashMap<String, BuddyInfo> addressBook;
+    ArrayList<BuddyInfo> addressBook;
 
     public AddressBook(){
-        addressBook = new HashMap<>();
+        addressBook = new ArrayList<>();
     }
 
-    public void addBuddy(String name, BuddyInfo buddies){
-        this.addressBook.put(name, buddies);
+    public void addBuddy(BuddyInfo buddy){
+        this.addressBook.add(buddy);
     }
 
-    public void remove(String name){
-        this.addressBook.remove(name);
+    public void removeBuddy(BuddyInfo buddy){
+        this.addressBook.remove(buddy);
     }
 
 
     public static void main(String[] args){
-        System.out.println("Address Book");
+        BuddyInfo buddy = new BuddyInfo("Tom","Carleton","613");
+        AddressBook addressBook = new AddressBook();
+        addressBook.addBuddy(buddy);
+        addressBook.removeBuddy(buddy);
 
     }
 
