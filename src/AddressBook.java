@@ -24,5 +24,8 @@ public class AddressBook{
         addressBook.removeBuddy(buddy);
 
     }
+    public void add(){
+
+    }
 
 }
